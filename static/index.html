@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - DevOps Pipeline Demo</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Task Manager</h1>
+        
+        <form id="task-form" class="task-form">
+            <input 
+                type="text" 
+                id="task-input" 
+                class="task-input" 
+                placeholder="Enter a new task..."
+                required
+            >
+            <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <ul id="task-list" class="task-list">
+            <li class="loading">Loading tasks...</li>
+        </ul>
+
+        <div id="stats" class="stats">
+            <div class="stat-item">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Total Tasks</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Pending</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
